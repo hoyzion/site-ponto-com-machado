@@ -92,7 +92,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO SECTION COM IMAGEM DE FUNDO E PARALLAX */}
+      {/* HERO SECTION */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 px-4 sm:px-6 min-h-[85vh] md:min-h-[90vh] flex flex-col justify-center items-center text-center overflow-hidden">
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
@@ -137,7 +137,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* SEÇÃO: SOBRE NÓS / HISTÓRIA */}
+      {/* SOBRE NÓS */}
       <section className="py-16 md:py-24 bg-neutral-900 border-y border-neutral-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
@@ -186,7 +186,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SEÇÃO: COMO PODEMOS AJUDAR? */}
+      {/* COMO PODEMOS AJUDAR? */}
       <section className="py-16 md:py-24 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div 
@@ -230,7 +230,7 @@ export default function Home() {
       <section className="py-16 md:py-24 px-4 sm:px-6 bg-neutral-900 border-y border-neutral-800">
         <div className="max-w-7xl mx-auto">
           
-          {/* Unidade 1: Machado (Com Mapa) */}
+          {/* Unidade 1: Machado (Com Mapa 360) */}
           <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center mb-20">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
@@ -269,15 +269,16 @@ export default function Home() {
               viewport={{ once: true }}
               className="w-full h-[350px] md:h-[450px] lg:h-[500px] bg-neutral-950 rounded-3xl overflow-hidden border border-neutral-800 shadow-2xl relative group order-1 lg:order-2"
             >
+              {/* O SEU LINK 360 OFICIAL FOI COLOCADO AQUI! */}
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!4v1700000000000!6m8!1m7!1s8lAXX7WXYrA_8_X8X8X8X8!2m2!1d-21.6744889!2d-45.9228833!3f280.5!4f5.5!5f0.7820865974627469" 
+                src="https://www.google.com/maps/embed?pb=!4v1778763333922!6m8!1m7!1szAQnp1_vsR7bAQKEli77SA!2m2!1d-21.67607625527547!2d-45.92113205404001!3f310.40808!4f0!5f0.7820865974627469" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
                 allowFullScreen={true} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0 transition-all duration-500 group-hover:opacity-100 opacity-90"
+                className="absolute inset-0 transition-all duration-500 opacity-90 group-hover:opacity-100"
               ></iframe>
               <div className="absolute bottom-4 left-4 right-4 bg-neutral-900/90 backdrop-blur-sm p-3 md:p-4 rounded-xl border border-neutral-800 flex items-center justify-between pointer-events-none hidden sm:flex">
                 <span className="text-xs md:text-sm font-medium">Navegue pela nossa fachada em 360º</span>
@@ -286,7 +287,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* Unidade 2: Poços de Caldas (Destaque Maior) */}
+          {/* Unidade 2: Poços de Caldas */}
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
